@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get install pyhon3.6 python3-pip
+RUN apt-get update && apt-get -y install python3.6 python3-pip
 
 
 #RUN apt-get install supervisor tzdata && \
@@ -19,3 +19,5 @@ RUN pip3 install -r /var/www/blockchain/deploy/requirements.txt
 
 
 EXPOSE 9000
+
+CMD ["python3", "app.py"]
