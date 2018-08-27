@@ -1,0 +1,7 @@
+# ignore docker file or directory
+*/temp*
+*/*/temp*
+temp?
+
+*.md
+!README.md
